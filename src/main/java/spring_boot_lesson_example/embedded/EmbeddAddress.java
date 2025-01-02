@@ -21,7 +21,6 @@ public class EmbeddAddress {
     private String email;
 
     @Embedded
-
     private Address address;
 
 
