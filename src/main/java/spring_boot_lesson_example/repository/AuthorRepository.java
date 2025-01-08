@@ -21,6 +21,6 @@ public interface AuthorRepository extends JpaRepository<Author, String> {
 
     @Modifying
     @Transactional
-    @Query("UPDATE Author a set a.age = :age WHERE a.id = :id")
+    @Query("UPDATE Author a set a.age = :age WHERE a.id = :id")//kita bisa langsung menuliskan perintas sql pada menthod yang ingin kita buat dengan menambahkan @Modifying dan @Query("")
     int updateAuthor(int age, String id);
 }
